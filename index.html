@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Pro</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container mt-4">
+                <!-- two column layout (image in left side and description in right side) -->
+                <section class="row row-cols-lg-2 row-cols-md-1 row-cols-1">
+                    <!-- product image column seciton left side  -->
+                    <div class="col d-flex justify-content-lg-end justify-content-sm-center pb-4 pe-4">
+                        <div>
+                            <img src="./images/mac.png" class="mac-book img-fluid" alt="a beautiful blue mac book">
+                        </div>
+                    </div>
+                    <!-- product description column right side -->
+                    <div class="col">
+                        <h2>Customise your Blue 24-inch <br>iMac with Apple M1 chip</h2>
+                        <p class="pe-5">iMac M1 chip has always been about its best-in-class display. The new iMac
+                            features
+                            an
+                            expansive
+                            24-inch 4.5K Retina display2 with narrower borders and 11.3 million pixels. With a P3 wide
+                            color
+                            gamut and over a billion colors, plus 500 nits of brightness, images are vivid and more
+                            brilliant
+                        </p>
+                        <!-- product configeration section -->
+                        <section>
+                            <div class="product-configeration mt-4">
+                                <h5 class="pb-1">Memory</h5>
+                                <button type="button" class="btn btn-light border mb-2 me-2">8GB Unified Memory</button>
+                                <button type="button" class="btn btn-light border me-2">16GB Unified Memory</button>
+                            </div>
+                            <div class="product-configeration mt-4">
+                                <h5 class="pb-1">Storage</h5>
+                                <button type="button" class="btn btn-light border me-2 mb-2">512GB SSD Storage</button>
+                                <button type="button" class="btn btn-light border me-2 mb-2">256GB SSD Storage</button>
+                                <button type="button" class="btn btn-light border me-2 mb-2">1TB SSD Storage</button>
+                            </div>
+                            <div class="product-configeration mt-4">
+                                <h5 class="pb-1">Choose your delivery option</h5>
+                                <button type="button" class="btn btn-light border me-2 mb-2">Friday, Aug 25 FREE Prime
+                                    Delivery</button>
+                                <button type="button" class="btn btn-light border me-2 mb-2">Friday, Aug 21 Quick
+                                    Delivery
+                                    (Charge
+                                    $20)</button>
+                            </div>
+                        </section>
+                        <!-- product price table -->
+                        <section class="price-table mt-4 pe-lg-4">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">Best Price</th>
+                                        <th scope="col">$<span>1299</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Extra Memory Cost</th>
+                                        <th scope="col">$<span>0</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Extra Storage Cost</th>
+                                        <th scope="col">$<span>0</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Quick Delivery Charge</th>
+                                        <th scope="col">$<span>0</span></th>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row">Total Price</th>
+                                        <th scope="row">$<span>1299</span></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </section>
+                        <!-- product promo code section -->
+                        <section class="promo-code pt-4">
+                            <h5>Apply your promo code</h5>
+                            <div class="d-lg-flex">
+                                <input class="form-control w-75 mb-2 me-2" type="search" placeholder="Enter Promo Code"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-primary mb-2 me-2" type="submit">Search</button>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <!-- one column layout for final product price -->
+                <section class="pt-3 pb-5">
+                    <hr>
+                    <h2 class="text-center">Total Price: $<span>1299</span></h2>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!-- main section end here -->
+    <!-- link of javascript file  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
