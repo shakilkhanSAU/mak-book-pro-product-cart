@@ -18,7 +18,7 @@
         <section>
             <div class="container mt-4">
                 <!-- two column layout (image in left side and description in right side) -->
-                <section class="row row-cols-lg-2 row-cols-md-1 row-cols-1">
+                <div class="row row-cols-lg-2 row-cols-md-1 row-cols-1">
                     <!-- product image column seciton left side  -->
                     <div class="col d-flex justify-content-lg-end justify-content-sm-center pb-4 pe-4">
                         <div>
@@ -38,7 +38,7 @@
                             brilliant
                         </p>
                         <!-- product configeration section -->
-                        <section>
+                        <div>
                             <div class="product-configeration mt-4">
                                 <h5 class="pb-1">Memory</h5>
                                 <button id="memory-default-button" type="button"
@@ -67,9 +67,9 @@
                                     Aug 21 Quick
                                     Delivery</button>
                             </div>
-                        </section>
+                        </div>
                         <!-- product price table -->
-                        <section class="price-table mt-4 pe-lg-4">
+                        <div class="price-table mt-4 pe-lg-4">
                             <table class="table">
                                 <tbody>
                                     <tr>
@@ -96,9 +96,9 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                        </section>
+                        </div>
                         <!-- product promo code section -->
-                        <section class="promo-code-section pt-4">
+                        <div class="promo-code-section pt-4">
                             <h5>Apply your promo code</h5>
                             <div class="d-lg-flex">
                                 <input id="promo-code-input" class="form-control w-75 mb-2 me-2" type="search"
@@ -106,18 +106,19 @@
                                 <button id="promo-button" class="btn btn-outline-primary mb-2 me-2"
                                     type="submit">Apply</button>
                             </div>
-                        </section>
+                        </div>
                     </div>
-                </section>
+                </div>
                 <!-- one column layout for final product price -->
-                <section class="pt-3 pb-5">
+                <div class="pt-3 pb-5">
                     <hr>
                     <h2 class="text-center">Total Price: $<span id="final-total-price">1299</span></h2>
-                </section>
+                </div>
             </div>
         </section>
     </main>
     <!-- main section end here -->
+
     <!-- link of javascript file  -->
     <script src="./js/script.js"></script>
 </body>

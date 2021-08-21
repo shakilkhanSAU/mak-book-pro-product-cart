@@ -1,20 +1,21 @@
-// function for best price
+// function for best price calculation
 function basePrice(product, price) {
     const BestPrice = document.getElementById(product + '-price');
     BestPrice.innerText = price;
     return BestPrice;
-}
+};
 
+// event handler for extra memory cost
 document.getElementById('memory-default-button').addEventListener('click', function () {
     basePrice('memory', '0');
     updateTotalPrice();
-    totalPriceBeforPromoApply()
+    totalPriceBeforPromoApply();
 });
 
 document.getElementById('memory-extra-price').addEventListener('click', function () {
-    basePrice('memory', '100');
+    basePrice('memory', '180');
     updateTotalPrice();
-    totalPriceBeforPromoApply()
+    totalPriceBeforPromoApply();
 });
 
 
@@ -22,48 +23,48 @@ document.getElementById('memory-extra-price').addEventListener('click', function
 document.getElementById('storage-default-button').addEventListener('click', function () {
     basePrice('storage', '0');
     updateTotalPrice();
-    totalPriceBeforPromoApply()
+    totalPriceBeforPromoApply();
 
 });
 
 document.getElementById('extra-for-256gb').addEventListener('click', function () {
     basePrice('storage', '100');
     updateTotalPrice();
-    totalPriceBeforPromoApply()
+    totalPriceBeforPromoApply();
 });
 
 document.getElementById('extra-for-1tb').addEventListener('click', function () {
     basePrice('storage', '180');
     updateTotalPrice();
-    totalPriceBeforPromoApply()
+    totalPriceBeforPromoApply();
 });
 
-
-// eventhandler for delivery cost
+// event handler for delivery cost
 document.getElementById('delivery-default-button').addEventListener('click', function () {
     basePrice('delivery', '0');
     updateTotalPrice();
-    totalPriceBeforPromoApply()
+    totalPriceBeforPromoApply();
 });
 
 document.getElementById('quick-delivery').addEventListener('click', function () {
     basePrice('delivery', '20');
     updateTotalPrice();
-    totalPriceBeforPromoApply()
+    totalPriceBeforPromoApply();
 });
 
-// funtion for update total price in table
+// funtion for update total price in (table)
 function updateTotalPrice() {
     const totalPriceValue = getTotalPrice();
     const totalField = document.getElementById('total-price');
     totalField.innerText = totalPriceValue;
 };
 
+// update final total price (before applying promo)
 function totalPriceBeforPromoApply() {
     const finalTotalBeforePromApply = document.getElementById('final-total-price');
     const getFinalTotalFromTalbe = getTotalPrice();
     finalTotalBeforePromApply.innerText = getFinalTotalFromTalbe;
-}
+};
 
 // function for getting individual price
 function getIndividualPrice(product) {
