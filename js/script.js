@@ -8,11 +8,13 @@ function basePrice(product, price) {
 document.getElementById('memory-default-button').addEventListener('click', function () {
     basePrice('memory', '0');
     updateTotalPrice();
+    totalPriceBeforPromoApply()
 });
 
 document.getElementById('memory-extra-price').addEventListener('click', function () {
     basePrice('memory', '100');
     updateTotalPrice();
+    totalPriceBeforPromoApply()
 });
 
 
@@ -20,17 +22,20 @@ document.getElementById('memory-extra-price').addEventListener('click', function
 document.getElementById('storage-default-button').addEventListener('click', function () {
     basePrice('storage', '0');
     updateTotalPrice();
+    totalPriceBeforPromoApply()
 
 });
 
 document.getElementById('extra-for-256gb').addEventListener('click', function () {
     basePrice('storage', '100');
     updateTotalPrice();
+    totalPriceBeforPromoApply()
 });
 
 document.getElementById('extra-for-1tb').addEventListener('click', function () {
     basePrice('storage', '180');
     updateTotalPrice();
+    totalPriceBeforPromoApply()
 });
 
 
@@ -38,21 +43,27 @@ document.getElementById('extra-for-1tb').addEventListener('click', function () {
 document.getElementById('delivery-default-button').addEventListener('click', function () {
     basePrice('delivery', '0');
     updateTotalPrice();
+    totalPriceBeforPromoApply()
 });
 
 document.getElementById('quick-delivery').addEventListener('click', function () {
     basePrice('delivery', '20');
     updateTotalPrice();
+    totalPriceBeforPromoApply()
 });
 
 // funtion for update total price in table
 function updateTotalPrice() {
-    // calling getTotalPrice funtion
     const totalPriceValue = getTotalPrice();
-    // setting total price to total field
     const totalField = document.getElementById('total-price');
     totalField.innerText = totalPriceValue;
 };
+
+function totalPriceBeforPromoApply() {
+    const finalTotalBeforePromApply = document.getElementById('final-total-price');
+    const getFinalTotalFromTalbe = getTotalPrice();
+    finalTotalBeforePromApply.innerText = getFinalTotalFromTalbe;
+}
 
 // function for getting individual price
 function getIndividualPrice(product) {
