@@ -41,20 +41,30 @@
                         <section>
                             <div class="product-configeration mt-4">
                                 <h5 class="pb-1">Memory</h5>
-                                <button type="button" class="btn btn-light border mb-2 me-2">8GB Unified Memory</button>
-                                <button type="button" class="btn btn-light border me-2">16GB Unified Memory</button>
+                                <button id="memory-default-button" type="button"
+                                    class="btn btn-light border mb-2 me-2">8GB
+                                    Unified Memory</button>
+                                <button id="memory-extra-price" type="button"
+                                    class="btn btn-light border mb-2 me-2">16GB
+                                    Unified Memory</button>
                             </div>
                             <div class="product-configeration mt-4">
                                 <h5 class="pb-1">Storage</h5>
-                                <button type="button" class="btn btn-light border me-2 mb-2">512GB SSD Storage</button>
-                                <button type="button" class="btn btn-light border me-2 mb-2">256GB SSD Storage</button>
-                                <button type="button" class="btn btn-light border me-2 mb-2">1TB SSD Storage</button>
+                                <button id="storage-default-button" type="button"
+                                    class="btn btn-light border me-2 mb-2">512GB
+                                    SSD Storage</button>
+                                <button id="extra-for-256gb" type="button" class="btn btn-light border me-2 mb-2">256GB
+                                    SSD Storage</button>
+                                <button id="extra-for-1tb" type="button" class="btn btn-light border me-2 mb-2">1TB
+                                    SSD Storage</button>
                             </div>
                             <div class="product-configeration mt-4">
                                 <h5 class="pb-1">Choose your delivery option</h5>
-                                <button type="button" class="btn btn-light border me-2 mb-2">Friday, Aug 25 FREE Prime
+                                <button id="delivery-default-button" type="button"
+                                    class="btn btn-light border me-2 mb-2">Friday, Aug 25 FREE Prime
                                     Delivery</button>
-                                <button type="button" class="btn btn-light border me-2 mb-2">Friday, Aug 21 Quick
+                                <button id="quick-delivery" type="button" class="btn btn-light border me-2 mb-2">Friday,
+                                    Aug 21 Quick
                                     Delivery
                                     (Charge
                                     $20)</button>
@@ -66,36 +76,37 @@
                                 <tbody>
                                     <tr>
                                         <th scope="col">Best Price</th>
-                                        <th scope="col">$<span>1299</span></th>
+                                        <th scope="col">$<span id="best-price">1299</span></th>
                                     </tr>
                                     <tr>
                                         <th scope="col">Extra Memory Cost</th>
-                                        <th scope="col">$<span>0</span></th>
+                                        <th scope="col">$<span id="memory-price">0</span></th>
                                     </tr>
                                     <tr>
                                         <th scope="col">Extra Storage Cost</th>
-                                        <th scope="col">$<span>0</span></th>
+                                        <th scope="col">$<span id="storage-price">0</span></th>
                                     </tr>
                                     <tr>
                                         <th scope="col">Quick Delivery Charge</th>
-                                        <th scope="col">$<span>0</span></th>
+                                        <th scope="col">$<span id="delivery-price">0</span></th>
                                     </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <th scope="row">Total Price</th>
-                                        <th scope="row">$<span>1299</span></th>
+                                        <th scope="row">$<span id="total-price">1299</span></th>
                                     </tr>
                                 </tfoot>
                             </table>
                         </section>
                         <!-- product promo code section -->
-                        <section class="promo-code pt-4">
+                        <section class="promo-code-section pt-4">
                             <h5>Apply your promo code</h5>
                             <div class="d-lg-flex">
-                                <input class="form-control w-75 mb-2 me-2" type="search" placeholder="Enter Promo Code"
-                                    aria-label="Search">
-                                <button class="btn btn-outline-primary mb-2 me-2" type="submit">Search</button>
+                                <input id="promo-code-input" class="form-control w-75 mb-2 me-2" type="search"
+                                    placeholder="Enter Promo Code" aria-label="Search">
+                                <button id="promo-button" class="btn btn-outline-primary mb-2 me-2"
+                                    type="submit">Apply</button>
                             </div>
                         </section>
                     </div>
@@ -103,7 +114,7 @@
                 <!-- one column layout for final product price -->
                 <section class="pt-3 pb-5">
                     <hr>
-                    <h2 class="text-center">Total Price: $<span>1299</span></h2>
+                    <h2 class="text-center">Total Price: $<span id="final-total-price">1299</span></h2>
                 </section>
             </div>
         </section>
